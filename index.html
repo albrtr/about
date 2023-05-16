@@ -2,55 +2,19 @@
 <html>
 <head>
   <title>RUSTAMOVQA</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #222;
-      color: #fff;
-    }
-    .section {
-      margin-bottom: 20px;
-    }
-    .section h2 {
-      margin-bottom: 10px;
-    }
-    .section p {
-      margin-bottom: 5px;
-    }
-    .section .sub-heading {
-      font-weight: bold;
-    }
-  </style>
-  <style>
-    body {
-      color: #fff;
-    }
-    .section {
-      background-color: #333;
-      padding: 10px;
-    }
-    .section h2 {
-      color: #fff;
-    }
-    .section p {
-      color: #ccc;
-    }
-    .section .sub-heading {
-      color: #fff;
-    }
-  </style>
-  
-   <script>
-    function printPageAsPDF() {
-      window.print(); 
-    }
-     </script>
-  
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+  
 <body>
-  <div class="header">
+<div class="header">
     <h1>QA Engineer</h1>
-  </div>
+    <div class="buttons">
+      <!-- <button onclick="translateToEnglish()">ENG</button> -->
+      <!-- <button onclick="translateToRussian()">RUS</button> -->
+      <button class="share-button" onclick="copyLink()">LINK</button>
+      <button onclick="printPageAsPDF()">PRINT</button>
+    </div>
+</div>
 
   <div class="section">
     <h2>Личная информация</h2>
@@ -73,40 +37,37 @@
   </div>
 
   <div class="section">
-    <h2>Навыки</h2>
+    <h2><span class="translate">Навыки</h2>
     <ul>
-      <li>Создание тестовой документации</li>
-      <li>Функциональное и нефункциональное тестирование, анализ требований, техники тест дизайна</li>
-      <li>Работа с таск-трекерами и баг-трекерами</li>
-      <li>Android Studio, Unity, Github, SQL, Postman</li>
+      <li><span class="sub-heading translate">Создание тестовой документации</li>
+      <li><span class="sub-heading translate">Функциональное и нефункциональное тестирование, анализ требований, техники тест дизайна</li>
+      <li><span class="sub-heading translate">Работа с таск-трекерами и баг-трекерами</li>
+      <li><span class="sub-heading translate">Android Studio, Unity, Github, SQL, Postman</li>
   </div>
     
     <div class="section">
-    <h2>Курсы</h2>
-    <p><span class="sub-heading">Название курса:</span> Software Testing</p>
-    <p><span class="sub-heading">Учебное заведение:</span> IT Academy</p>
-    <p><span class="sub-heading">Год обучения:</span> февраль 2023 - апрель 2023</p>
+    <h2><span class="translate">Курсы</h2>
+    <p><span class="sub-heading translate">Название курса:</span> Software Testing</p>
+    <p><span class="sub-heading translate">Учебное заведение:</span> IT Academy</p>
+    <p><span class="sub-heading translate">Год обучения:</span> февраль 2022 - апрель 2022</p>
       <hr>
-    <p><span class="sub-heading">Название:</span> Computer Science</p>
-    <p><span class="sub-heading">Учебное заведение:</span> IT Academy</p>
-    <p><span class="sub-heading">Год обучения:</span> ноябрь 2022 - декабрь 2022</p>
+    <p><span class="sub-heading translate">Название:</span> Computer Science</p>
+    <p><span class="sub-heading translate">Учебное заведение:</span> IT Academy</p>
+    <p><span class="sub-heading translate">Год обучения:</span> ноябрь 2021 - декабрь 2021</p>
   </div>
   
 <div class="section">
-    <h2>Образование</h2>
-    <p><span class="sub-heading">Уровень образования:</span> Высшее</p>
-    <p><span class="sub-heading">Учебное заведение:</span> БГУИР</p>
-  <p><span class="sub-heading">Факультет:</span> Информационной безопасности</p>
-    <p><span class="sub-heading">Год обучения:</span> 2022 - 2027</p>
-  </div>
-
-  <div class="section">
-    <h2>Языки</h2>
-    <ul>
-      <li>Английский: B1 - Средний</li>
-    </ul>
-  </div>
-   <div class="section">
-    <button onclick="printPageAsPDF()">Распечатать страницу</button>
-  </div>
-</body
+    <h2><span class="translate">Образование</span></h2>
+    <p><span class="sub-heading translate">Уровень образования:</span> <span class="translate">Высшее</span></p>
+    <p><span class="sub-heading translate">Учебное заведение:</span> <span class="translate">БГУИР</span></p>
+    <p><span class="sub-heading translate">Факультет:</span> <span class="translate">Информационной безопасности</span></p>
+    <p><span class="sub-heading translate">Год обучения:</span> <span class="translate">2022 - 2027</span></p> </div>
+  
+<div class="section">
+    <h2><span class="translate">Языки</span></h2>
+     <p><span class="sub-heading translate">Английский</span>: <span class="translate">B1 - Средний</span></p> </div>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
