@@ -15,7 +15,7 @@ function copyLink() {
   textarea.setSelectionRange(0, textarea.value.length);
   document.execCommand('copy');
   document.body.removeChild(textarea);
-  alert('https://albrtr.github.io/about');
+  alert('LINK COPIED!');
 }
 
 function translateToEnglish() {
