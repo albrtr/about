@@ -1,5 +1,9 @@
 function printPageAsPDF() {
-  window.print();
+    const hideButton = document.querySelectorAll('.hide-button');
+    hideButton.forEach(button => {
+      button.style.display = 'none';
+    });
+    window.print();
 }
 
 function copyLink() {
