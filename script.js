@@ -3,7 +3,7 @@ function printPageAsPDF() {
 }
 
 function copyLink() {
-  const url = 'https://clck.ru/34RmrX';
+  const url = 'https://albrtr.github.io/about';
   const textarea = document.createElement('textarea');
   textarea.value = url;
   document.body.appendChild(textarea);
@@ -11,7 +11,7 @@ function copyLink() {
   textarea.setSelectionRange(0, textarea.value.length);
   document.execCommand('copy');
   document.body.removeChild(textarea);
-  alert('DONE!');
+  alert('https://albrtr.github.io/about');
 }
 
 function translateToEnglish() {
